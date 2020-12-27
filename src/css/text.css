@@ -1,0 +1,219 @@
+
+.center{
+    margin:1% auto;
+    width:600px;
+    text-align:left;
+    float:left;
+    position:relative;
+  }
+  
+  .buton{
+    color:#333;
+    background:#fff;
+    font-size:1.1em;
+    text-decoration:none;
+    padding:1em;
+    position: Relative;
+    display:block;
+    cursor:pointer;
+    -webkit-transition:500ms all ease-ot;
+    -moz-transition:500ms all ease-out;
+    -o-transition:500ms all ease-out ;
+    transition:500ms ease-out;
+  }
+  
+  .hover::after,.hover::before,
+  .text::before,.text::after{
+    content:'';
+    box-sizing:border-box;
+    position:absolute;
+    background:#FF4343;
+    -webkit-transition:500ms all eases ;
+    -moz-transition:500ms all ease-out ;
+    -o-transition:500ms all ease-out ;
+    transition: 500ms all ease-out;
+  }
+  
+  .hover::after{
+    right:0;
+    bottom:0;
+    width:0;
+    height:3px;
+  }
+  
+  .hover::before{
+    right:0;
+    bottom:0;
+    height:0;
+    width:3px;
+  }
+  
+  .text::after{
+    top:0;
+    left:0;
+    width:0px;
+    height:3px;
+  }
+  
+  .text::before{
+    top:0;
+    left:0;
+    height:0px;
+    width:3px;
+  }
+  
+  .buton:hover .hover::after{
+    width:100%;
+    height:3px;
+  }
+  
+  .buton:hover .text::after{
+    width:100%;
+    height:3px;
+  }
+  
+  .buton:hover .text::before{
+    height:100%;
+    width:3px;
+  }
+  
+  .buton:hover .hover::before{
+    height:100%;
+    width:3px;
+  }
+  
+  .buton:hover .text,
+  .buton:hover .fa-home{
+    color:#FF4343;
+  }
+  
+  .buton:hover .fa-home{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 300ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+  }
+  
+  @-webkit-keyframes spin {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(360deg); }	
+  }
+  
+  /***********************************************/
+  
+  .hover2::after,.hover2::before,
+  .text2::before,.text2::after{
+    content:'';
+    position:absolute;
+    background:#9A0089;
+  }
+  
+  
+  .hover2::after{
+    right:0;
+    bottom:0;
+    width:0;
+    -webkit-transition:350ms all ease-out ;
+    -moz-transition:350ms all ease-out ;
+    -o-transition:350ms all ease-out ;
+    transition: 350ms all ease-out;
+  }
+  
+  .text2::before{
+    bottom:0;
+    left:0;
+    height:0px;
+    -webkit-transition:350ms all ease-out 350ms ;
+    -moz-transition:350ms all ease-out 350ms;
+    -o-transition:350ms all ease-out 350ms ;
+    transition: 350ms all ease-out 350ms;
+  }
+  
+  .hover2::before{
+    right:0;
+    top:0;
+    height:0;
+    -webkit-transition:350ms all ease-out 1050ms ;
+    -moz-transition:350ms all ease-out 1050ms ;
+    -o-transition:350ms all ease-out 1050ms ;
+    transition: 350ms all ease-out 1050ms;
+  }
+  
+  .text2::after{
+    top:0;
+    left:0;
+    width:0px;
+    -webkit-transition:350ms all ease-out 700ms ;
+    -moz-transition:350ms all ease-out 700ms ;
+    -o-transition:350ms all ease-out 700ms ;
+    transition: 350ms all ease-out 700ms;
+  }
+  
+  
+  
+  .buton:focus .hover2::after{
+    width:100%;
+    height:3px;
+  }
+  
+  .buton:focus .text2::after{
+    width:100%;
+    height:3px;
+  }
+  
+  .buton:focus .text2::before{
+    height:100%;
+    width:3px;
+  }
+  
+  .buton:focus .hover2::before{
+    height:100%;
+    width:3px;
+  }
+  
+  .buton:focus .text2,
+  .buton:focus .fa-graduation-cap{
+    color:#9A0089;
+  }
+  .buton:not(:focus) .hover2::after,
+  .buton:not(:focus) .text2::after,
+  .buton:not(:focus) .text2::before,
+  .buton:not(:focus) .hover2::before
+      {
+          width: 0;
+          height: 0;
+          -webkit-transition: none;
+        -moz-transition: none;
+        -o-transition: none;
+        transition: none;
+      }
+  
+  .buton:focus .fa-graduation-cap{
+    -webkit-animation-name: up;
+    -webkit-animation-duration: 900ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-out;
+  }
+  
+  @-webkit-keyframes up {
+      from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    10%, 20% {
+      transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    30%, 50%, 70%, 90% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+  
+    40%, 60%, 80% {
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+      
