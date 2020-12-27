@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `postgres://fdhyzomcveaqob:45332b6e88f75c54bf51022b76d5f8fb41766a9c3b81122094c01c05fd4f221d@ec2-52-44-139-108.compute-1.amazonaws.com:5432/d921idhop4jdrt`,
         queryLimit: 1000, // Default to 100
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
