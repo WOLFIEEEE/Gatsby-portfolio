@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://dry-fjord-54130.herokuapp.com`,
+        apiURL: `http://localhost:1337`,
         queryLimit: 1000, // Default to 100
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
