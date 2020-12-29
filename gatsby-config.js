@@ -4,7 +4,6 @@ module.exports = {
     description: "This is My Portfolio website using gatsby and strapi and for recieving contact information I used formspree",
     author: "@wolfie",
     twitterUsername: "@khushwantparihar",
-    image: "/rrrrrr.PNG",
     siteUrl: "https://wolfie-portfolio.netlify.app/",
   },
   plugins: [
