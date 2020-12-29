@@ -2,6 +2,7 @@ import React from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
+import TextTransition, { presets } from "react-text-transition";
 import SocialLinks from "../constants/socialLinks"
 import "../css/text.css"
 const query = graphql`
@@ -16,6 +17,20 @@ const query = graphql`
   }
 `
 const Hero = () => {
+
+  const TEXTS = [
+    "Software Engineer",
+    "Front-End WebDev",
+    "Graphic Desiner",
+  ];
+    const [index, setIndex] = React.useState(0);
+  
+    React.useEffect(() => {
+      const intervalId = setInterval(() =>
+        setIndex(index => index + 1),
+        3000 // every 3 seconds
+      );
+    });
   const {
     file: {
       childImageSharp: { fluid },
@@ -29,7 +44,12 @@ const Hero = () => {
           <div>
             <div className="underline"></div>
             <h1 >i'm Khushwant</h1>
-            <h3>Software Engineer</h3>
+            <h3>
+            <TextTransition
+        text={ TEXTS[index % TEXTS.length] }
+        springConfig={ presets.wobbly }
+      />
+            </h3>
             {/* adding a diiferent animation part on this  */}
       <div>
             <Link to="/contact" className="btn">
