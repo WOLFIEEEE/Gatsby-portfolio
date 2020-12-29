@@ -8,6 +8,7 @@ module.exports = {
     siteUrl: "https://wolfie-portfolio.netlify.app/",
   },
   plugins: [
+    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -31,6 +32,7 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
+
     // {
     //   resolve: `gatsby-plugin-prefetch-google-fonts`,
     //   options: {
@@ -45,5 +47,6 @@ module.exports = {
     //     ],
     //   },
     // },
+    `gatsby-plugin-transition-link`
   ],
 }
