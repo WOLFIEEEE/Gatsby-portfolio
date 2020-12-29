@@ -1,11 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: "Wolfie Portfolio",
-    description: "This is My Portfolio website using gatsby and strapi and for recieving contact information I used formspree",
-    author: "@wolfie",
-    twitterUsername: "@khushwantparihar",
-    siteUrl: "https://wolfie-portfolio.netlify.app/",
-  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -23,9 +16,6 @@ module.exports = {
       options: {
         apiURL: `https://dry-fjord-54130.herokuapp.com`,
         queryLimit: 5000, // Default to 100
-        //   contentTypes : `jobs`, `projects`, `blogs`,
-        //   singleType : `about`
-        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
         contentTypes: [`projects`],
         singleTypes: [`about`],
       },

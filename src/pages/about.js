@@ -4,7 +4,6 @@ import { graphql } from "gatsby"
 import Title from "../components/Title"
 import Imag from "gatsby-image"
 import { FaAngleDoubleRight } from "react-icons/fa"
-import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 const About = ({data:
   {about:{nodes},
@@ -12,7 +11,6 @@ const About = ({data:
   const { about, Tech, Int, Image,title } = nodes[0]
   return (
 <Layout>
-<SEO title="About" description="About Me" />
       <section className="about-page">
         <div className="section-center about-center">
           <Imag fluid={Image.childImageSharp.fluid} className="about-img" />
