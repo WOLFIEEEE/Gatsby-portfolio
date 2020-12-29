@@ -15,7 +15,14 @@ module.exports = {
       resolve: `gatsby-source-strapi`,
       options: {
         apiURL: `https://dry-fjord-54130.herokuapp.com`,
+<<<<<<< Updated upstream
         queryLimit: 5000, // Default to 100
+=======
+        queryLimit: 1000, // Default to 100
+        //   contentTypes : `jobs`, `projects`, `blogs`,
+        //   singleType : `about`
+        //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
+>>>>>>> Stashed changes
         contentTypes: [`projects`],
         singleTypes: [`about`],
       },
