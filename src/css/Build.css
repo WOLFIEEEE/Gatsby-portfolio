@@ -1,0 +1,19 @@
+.centergif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  body {
+    background-color: #C2E2F1 ;
+  }
+  .texta
+  {
+      text-align: center;
+  }
+  .textab
+  {
+    justify-content: center;
+      
+  }

@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import Projects from "../components/Projects"
 import SEO from "../components/SEO"
+import { Link } from "gatsby"
 // ...GatsbyImageSharpFluid
 
 const ProjectsPage = ({data:{allStrapiProjects:{nodes:projects}}}) => {
@@ -11,9 +12,11 @@ const ProjectsPage = ({data:{allStrapiProjects:{nodes:projects}}}) => {
     <section className="project-page">
       <Projects projects={projects} title="ALL projects"/>
     </section>
-    <button type="submit" className="submit-btn btn">
-              Click here to See Some of my Graphic design Manipulation
-            </button>
+    <div className="textab">
+      <Link to="/build" className="btn">
+       Click to See my Graphic Design art gallary
+      </Link>
+      </div>
   </Layout> 
   
 }
