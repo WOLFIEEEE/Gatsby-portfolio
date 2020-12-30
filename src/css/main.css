@@ -63,11 +63,25 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-white);
+  background: linear-gradient(-45deg, #36454f, #000000, #253529, #242124);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 ul {
   list-style-type: none;
@@ -632,7 +646,7 @@ Projects
 ===============
 */
 .projects {
-  background: var(--clr-grey-10);
+  background: #121212;
 }
 .project {
   display: grid;
