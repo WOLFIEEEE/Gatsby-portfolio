@@ -9,7 +9,7 @@ const Project = ({desc,title,url,github,Image,Technologies}) => {
     className="project-img"/>
     <div className="project-info">
       <h3>{title}</h3>
-      <p>{desc}</p>
+      <p className="project-desc">{desc}</p>
       <div className="project-stack">
         {
           Technologies.map(item=>{

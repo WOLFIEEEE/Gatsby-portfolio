@@ -20,13 +20,13 @@ const About = ({data:
 
           <article className="about-text">
             <Title title={title} />
-            <p>{about}</p>
+            <p className="about-text">{about}</p>
             <article className="job-info">
           {Int.map(item => {
             return (
               <div key={item.id} className="job-desc">
                 <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{item.interest}</p>
+                <p className="about-text">{item.interest}</p>
               </div>
             )
           })}

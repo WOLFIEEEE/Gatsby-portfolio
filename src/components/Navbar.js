@@ -2,6 +2,7 @@ import React from "react"
 import logo from "../assets/logo1.png"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
+import ThemeChanger from "../components/themeChanger"
 const Navbar = ({toggleSidebar}) => {
   return (
 <nav className="navbar">
@@ -13,7 +14,9 @@ const Navbar = ({toggleSidebar}) => {
       </button>
       </div>
     <PageLinks styleClass="nav-links"></PageLinks>
+   
   </div>
+  <ThemeChanger/>
 </nav>
   );
 }

@@ -28,7 +28,9 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1 >i'm Khushwant</h1>
+            <h1 class="title" data-value="I'M Khushwant">
+  I'M Khushwant
+</h1>
             <h3>Software Engineer</h3>
             {/* adding a diiferent animation part on this  */}
       <div>
