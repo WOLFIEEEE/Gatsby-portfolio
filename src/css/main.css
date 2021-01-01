@@ -45,7 +45,7 @@ Variables
   --radius: 0.25rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
+  --max-width: 1070px;
   --fixed-width: 700px;
 }
 
@@ -63,7 +63,6 @@ body.light .gg-sun {
 .mode-container {
   width: 24px;
   height: 24px;
-  margin-left: 20px;
 }
 .gg-sun {
   box-sizing: border-box;
@@ -325,7 +324,11 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-white);
+  background: white;
+}
+
+body.dark .navbar{
+  background:#121212;
 }
 .nav-center {
   width: 90vw;
@@ -354,6 +357,9 @@ Navbar
 .nav-links {
   display: none;
 }
+body.dark .nav-links{
+  color: aliceblue;
+}
 @media screen and (min-width: 768px) {
   .toggle-btn {
     display: none;
@@ -372,6 +378,10 @@ Navbar
     letter-spacing: var(--spacing);
     transition: var(--transition);
     padding: 0.5rem 0;
+  }
+  body.dark .nav-links a
+  {
+    color: #DBB2FF;
   }
   .nav-links a:hover {
     color: var(--clr-primary-5);
@@ -522,7 +532,7 @@ Hero
   position: relative;
 }
 body.dark .hero {
-  background-color: yellow;
+  background-color: #121212;
 }
 .hero-center {
   height: 100%;
@@ -536,6 +546,9 @@ body.dark .hero {
 }
 .hero-info {
   background: var(--clr-primary-10);
+}
+body.dark .hero-info{
+  background: #121212;
 }
 .hero-img {
   display: none;
@@ -560,6 +573,10 @@ body.dark .hero {
     bottom: 0;
     background: var(--clr-white);
   }
+
+  body.dark .hero::before{
+    background: #121212;
+  }
   .hero-center {
     grid-template-columns: repeat(12, 1fr);
   }
@@ -575,6 +592,14 @@ body.dark .hero {
     display: block;
     grid-row: 1/1;
     grid-column: 6/-1;
+  }
+  body.dark .hero-img{
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); 
+  }
+  body.dark .hero-img.hover{
+    filter: none;
+      -webkit-filter: grayscale(0); 
   }
 }
 @media screen and (min-width: 1170px) {
@@ -948,61 +973,6 @@ body.dark .about-text
   .about-text {
     grid-column: 6 / -1;
   }
-}
-/*
-===============
-Contact Page
-===============
-*/
-.contact-page {
-  display: grid;
-  place-items: center;
-  padding: 5rem 0;
-}
-.contact-form {
-  background: var(--clr-white);
-  border-radius: var(--radius);
-  text-align: center;
-  box-shadow: var(--light-shadow);
-  transition: var(--transition);
-  width: 90vw;
-  max-width: 35rem;
-}
-.contact-form:hover {
-  box-shadow: var(--dark-shadow);
-}
-.contact-form h3 {
-  padding-top: 1.25rem;
-  color: var(--clr-grey-5);
-}
-.form-group {
-  padding: 1rem 1.5rem;
-}
-.form-control {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: none;
-  margin-bottom: 1.25rem;
-  background: var(--clr-grey-10);
-  border-radius: var(--radius);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-}
-.form-control::placeholder {
-  font-family: var(--ff-primary);
-  color: var(--clr-grey-1);
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-}
-.submit-btn {
-  display: block;
-  width: 100%;
-  padding: 1rem;
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
 }
 /*
 ===============

@@ -51,9 +51,13 @@ body .title::after {
 @media screen and (min-width: 768px) {
   body .title {
     position: relative;
-    font-size: 8rem;
-    width: 90rem;
+    font-size: 6rem;
     text-shadow: -2px 0 red;
     color: black;
   }
+}
+
+body.dark .title
+{
+  color:#F2E7FE;
 }

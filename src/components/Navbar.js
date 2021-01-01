@@ -3,12 +3,13 @@ import logo from "../assets/logo1.png"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/links"
 import ThemeChanger from "../components/themeChanger"
+import "../css/navicon.css"
 const Navbar = ({toggleSidebar}) => {
   return (
 <nav className="navbar">
   <div className="nav-center">
     <div className="nav-header">
-      <img src={logo} alt='logo'/>
+    <div class="glitch" data-text="Khushwant">Khushwant!</div> 
       <button type="button" className="toggle-btn" onClick={toggleSidebar}>
       <FaAlignRight></FaAlignRight>
       </button>

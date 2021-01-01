@@ -4,6 +4,8 @@ import Layout from "../components/Layout"
 import Hero from "../components/Hero"
 import Projects from "../components/Projects"
 import SEO from "../components/SEO"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
+import TransitionLink from "gatsby-plugin-transition-link"
 export default ({data}) => {
   const {allStrapiProjects:{nodes:projects}}=data
   return <Layout>
