@@ -8,7 +8,6 @@ module.exports = {
     siteUrl: "https://wolfie-portfolio.netlify.app/",
   },
   plugins: [
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-dark-mode`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
