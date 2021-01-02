@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import TextTransition, { presets } from "react-text-transition";
 import SocialLinks from "../constants/socialLinks"
+import TextLoop from "react-text-loop";
 import "../css/text.css"
 const query = graphql`
   {
@@ -43,13 +44,14 @@ const Hero = () => {
         <article className="hero-info">
           <div>
             <div className="underline"></div>
-            <h1 >i'm Khushwant</h1>
-            <h3>
-            <TextTransition
-        text={ TEXTS[index % TEXTS.length] }
-        springConfig={ presets.wobbly }
-      />
-            </h3>
+            <h2 className="title" data-value="I'M Khushwant">
+  I'M Khushwant
+</h2>
+               <TextLoop> 
+                    <h3>Software Engineer</h3>
+                    <h3>Front-end Dev</h3>
+                    <h3>Graphic Designer</h3>
+                </TextLoop>{" "}
             {/* adding a diiferent animation part on this  */}
       <div>
             <Link to="/contact" className="btn">

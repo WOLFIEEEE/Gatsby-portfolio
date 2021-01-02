@@ -4,10 +4,12 @@ module.exports = {
     description: "This is My Portfolio website using gatsby and strapi and for recieving contact information I used formspree",
     author: "@wolfie",
     twitterUsername: "@khushwantparihar",
-    image: "/rrrrrr.png",
-    siteUrl: "https://wolfie-portfolio.netlify.app/",
+    image: "/rrrrrr.PNG",
+    siteUrl: "https://khushwant.netlify.app/",
   },
   plugins: [
+    `gatsby-plugin-transition-link`,
+    `gatsby-plugin-dark-mode`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -30,6 +32,22 @@ module.exports = {
         contentTypes: [`projects`],
         singleTypes: [`about`],
       },
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+          once: true, // Defines if animation needs to be launched once
+          disable: false, // Flag for disabling animations
+          
+          // Advanced Options
+          selector: '[data-sal]', // Selector of the elements to be animated
+          animateClassName: 'sal-animate', // Class name which triggers animation
+          disabledClassName: 'sal-disabled', // Class name which defines the disabled state
+          rootMargin: '0% 50%', // Corresponds to root's bounding box margin
+          enterEventName: 'sal:in', // Enter event name
+          exitEventName: 'sal:out', // Exit event name
+      }
     },
     // {
     //   resolve: `gatsby-plugin-prefetch-google-fonts`,

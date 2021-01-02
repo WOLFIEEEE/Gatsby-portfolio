@@ -9,8 +9,9 @@ export default ({data}) => {
   
   return <Layout>
     <SEO title="Home" description="this is our home page" />
+    
     <Hero/>
-    <Projects projects={projects} title="Main Projects" showLink/>
+    <Projects  projects={projects} title="Main Projects" showLink/>
   </Layout>
 }
 export const query = graphql`

@@ -5,12 +5,15 @@ import Title from "../components/Title"
 import Imag from "gatsby-image"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import SEO from "../components/SEO"
+import Zoom from 'react-reveal/Zoom';
+
 // ...GatsbyImageSharpFluid
 const About = ({data:
   {about:{nodes},
 }}) => {
   const { about, Tech, Int, Image,title } = nodes[0]
   return (
+    
 <Layout>
 <SEO title="About" description="About Me" />
       <section className="about-page">
@@ -20,13 +23,13 @@ const About = ({data:
 
           <article className="about-text">
             <Title title={title} />
-            <p>{about}</p>
+            <p className="about-text">{about}</p>
             <article className="job-info">
           {Int.map(item => {
             return (
               <div key={item.id} className="job-desc">
                 <FaAngleDoubleRight className="job-icon"></FaAngleDoubleRight>
-                <p>{item.interest}</p>
+                <p className="about-text">{item.interest}</p>
               </div>
             )
           })}

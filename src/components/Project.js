@@ -1,15 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Imag from "gatsby-image"
+import Zoom from 'react-reveal/Zoom';
 import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
 const Project = ({desc,title,url,github,Image,Technologies}) => {
   return( 
+    <Zoom >
   <article className="project">
     <Imag fluid={Image.childImageSharp.fluid}
     className="project-img"/>
     <div className="project-info">
       <h3>{title}</h3>
-      <p>{desc}</p>
+      <p className="project-desc">{desc}</p>
       <div className="project-stack">
         {
           Technologies.map(item=>{
@@ -27,6 +29,7 @@ const Project = ({desc,title,url,github,Image,Technologies}) => {
       </div>
     </div>
   </article>
+  </Zoom>
   );
 }
   

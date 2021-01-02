@@ -3,11 +3,14 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import "../css/contact.css"
 import { Link } from "gatsby"
+import LightSpeed from 'react-reveal/LightSpeed';
+import Zoom from 'react-reveal/Zoom';
 
 const contact = () => {
   return (
     <Layout>
       <SEO title="Contact" description="Reach Me" />
+      <Zoom>
        <div className="background">
         <div className="container">
           <div className="screen">
@@ -53,12 +56,17 @@ const contact = () => {
           </div>
         </div>
       </div>
+      </Zoom>
+      <Zoom>
       <h3 className="texta">For any suggestion for my portfolio Website Click below</h3>
+        </Zoom>
+        <Zoom>
       <div className="textab">
       <Link to="/build" className="btn" >
        Add suggestion
       </Link>
       </div>
+      </Zoom>
 
     </Layout>
   )

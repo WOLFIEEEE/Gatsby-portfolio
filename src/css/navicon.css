@@ -1,0 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Changa+One);
+.red {
+  font-family: "Changa One", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  text-shadow: 1px 0px 1px rgba(160, 160, 170, 0.5), 0px 1px 1px rgba(230, 230, 240, 0.5), 2px 1px 1px rgba(159, 159, 169, 0.6), 1px 2px 1px rgba(229, 229, 239, 0.6), 3px 2px 1px rgba(158, 158, 168, 0.7), 2px 3px 1px rgba(228, 228, 238, 0.7), 4px 3px 1px rgba(157, 157, 167, 0.8), 3px 4px 1px rgba(227, 227, 237, 0.8), 5px 4px 1px rgba(156, 156, 166, 0.9), 4px 5px 1px rgba(226, 226, 236, 0.9), 6px 5px 1px #9b9ba5, 5px 6px 1px #e1e1eb, 7px 6px 1px #9a9aa4, 6px 7px 1px #e0e0ea, 8px 7px 1px #9999a3, 7px 8px 1px #dfdfe9, 9px 8px 1px #9898a2, 12px 12px 20px rgba(0, 0, 0, 0.2);
+}
