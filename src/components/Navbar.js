@@ -9,7 +9,7 @@ const Navbar = ({toggleSidebar}) => {
 <nav className="navbar">
   <div className="nav-center">
     <div className="nav-header">
-    <div class="glitch" data-text="Khushwant">Khushwant!</div> 
+    <h1 className="red">Portfolio</h1>
       <button type="button" className="toggle-btn" onClick={toggleSidebar}>
       <FaAlignRight></FaAlignRight>
       </button>

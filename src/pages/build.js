@@ -10,14 +10,18 @@ const Error = () => {
 
   return<Layout>
     <SEO title="Build page" />
-      <img src={build} alt="Paris" class="centergif"/>
-      <div className="textab">
-      <AniLink paintDrip to="/" className="btn">
-  Home
-      </AniLink>
+    <div className="textab">
+      <Link to="/" className="btn">
+  Back to home 
+      </Link>
       </div>
+      <div>
+      <img src={build} alt="Paris" class="centergif"/>
+      </div>
+     
       
       <h3 className="texta">(Build in progress should be available soon)</h3>
+      
   </Layout> }
 
 export default Error

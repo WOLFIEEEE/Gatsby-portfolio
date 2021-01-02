@@ -5,12 +5,15 @@ import Title from "../components/Title"
 import Imag from "gatsby-image"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import SEO from "../components/SEO"
+import Zoom from 'react-reveal/Zoom';
+
 // ...GatsbyImageSharpFluid
 const About = ({data:
   {about:{nodes},
 }}) => {
   const { about, Tech, Int, Image,title } = nodes[0]
   return (
+    
 <Layout>
 <SEO title="About" description="About Me" />
       <section className="about-page">

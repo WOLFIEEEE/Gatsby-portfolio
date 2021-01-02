@@ -3,6 +3,7 @@ import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
+import TextLoop from "react-text-loop";
 import "../css/text.css"
 const query = graphql`
   {
@@ -31,7 +32,11 @@ const Hero = () => {
             <h2 className="title" data-value="I'M Khushwant">
   I'M Khushwant
 </h2>
-            <h3>Software Engineer</h3>
+               <TextLoop> 
+                    <h3>Software Engineer</h3>
+                    <h3>Front-end Dev</h3>
+                    <h3>Graphic Designer</h3>
+                </TextLoop>{" "}
             {/* adding a diiferent animation part on this  */}
       <div>
             <Link to="/contact" className="btn">
