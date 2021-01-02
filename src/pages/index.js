@@ -6,6 +6,7 @@ import Projects from "../components/Projects"
 import SEO from "../components/SEO"
 export default ({data}) => {
   const {allStrapiProjects:{nodes:projects}}=data
+  
   return <Layout>
     <SEO title="Home" description="this is our home page" />
     
