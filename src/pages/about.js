@@ -19,8 +19,6 @@ const About = ({data:
       <section className="about-page">
         <div className="section-center about-center">
           <Imag fluid={Image.childImageSharp.fluid} className="about-img" />
-
-
           <article className="about-text">
             <Title title={title} />
             <p className="about-text">{about}</p>
@@ -38,7 +36,11 @@ const About = ({data:
         
             <div className="about-stack">
               {Tech.map(item => {
-                return <span key={item.id}>{item.title}</span>
+                return( 
+                  <Zoom>
+                <span key={item.id}>{item.title}</span>
+                </Zoom>
+              );
               })}
             </div>
           </article>
