@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import SEO from "../components/SEO"
 import build from "../assets/build.gif"
 import "../css/build.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Error = () => {
 

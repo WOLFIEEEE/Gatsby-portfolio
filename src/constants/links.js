@@ -20,7 +20,7 @@ const data = [
   {
     id: 4,
     text: "Resume",
-    url: "https://drive.google.com/file/d/1KErwUmmSqGqvRmCup1BUqddaKg5y1DO4/view?usp=sharing",
+    url: "/resume/",
   },
   {
     id: 5,
@@ -32,9 +32,9 @@ const data = [
 const tempLinks = data.map(link => {
   return (
     <li key={link.id}>
-      <AniLink paintDrip to={link.url} >
+      <Link  to={link.url} >
       {link.text}
-      </AniLink>
+      </Link>
     </li>
   )
 })
