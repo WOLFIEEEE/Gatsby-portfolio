@@ -20,7 +20,7 @@ const data = [
   {
     id: 4,
     text: "Resume",
-    url: "https://drive.google.com/file/d/1KErwUmmSqGqvRmCup1BUqddaKg5y1DO4/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1Zi25ZZvZbrJHciUaH4YDTH7KIIlgMEM0/view?usp=sharing",
   },
   {
     id: 5,
